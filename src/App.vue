@@ -3,9 +3,9 @@
     <nav>
       <div class="brand">Damalerio's Blog Site</div>
       <div class="navigations">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/gallery">Gallery</router-link> |
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
+        <router-link to="/gallery">Gallery</router-link>
         <router-link to="/hobbies">Hobbies</router-link>
       </div>
     </nav>
@@ -28,7 +28,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .navigations {
@@ -46,9 +47,15 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 70px;
 }
+
+nav a:last-child {
+  margin-right: 0;
+}
+
 nav a:hover {
   text-decoration: underline;
+  color: #76ABAE;
 }
 </style>
