@@ -21,6 +21,7 @@
 .home-page {
   padding: 20px;
   color: #EEEEEE;
+  margin-top: 70px;
 }
 
 .split-container {
