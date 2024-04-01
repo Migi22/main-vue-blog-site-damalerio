@@ -1,13 +1,16 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/gallery">Gallery</router-link> |
-      <router-link to="/hobbies">Hobbies</router-link>
+      <div class="brand">Damalerio's Blog Site</div>
+      <div class="navigations">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link> |
+        <router-link to="/gallery">Gallery</router-link> |
+        <router-link to="/hobbies">Hobbies</router-link>
+      </div>
     </nav>
     
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
@@ -20,10 +23,26 @@ export default {
 
 <style>
 nav {
-  background-color: #31363F;
   color: #fff;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
 }
+
+.navigations {
+  font-size: 25px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 45px;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 nav a {
   color: #fff;
   text-decoration: none;

@@ -4,6 +4,8 @@ import AboutPage from '../views/AboutPage.vue'
 import GalleryPage from '../views/GalleryPage.vue'
 import HobbyList from '../views/HobbyList.vue'
 
+
+
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },

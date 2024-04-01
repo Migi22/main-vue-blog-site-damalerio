@@ -2,7 +2,7 @@
     <div class="gallery-page">
       <h1>Gallery Page</h1>
       <p>This is the home page.</p>
-      <GalleryPage /> <!-- Using the HomePage component -->
+      
     </div>
   </template>
   
