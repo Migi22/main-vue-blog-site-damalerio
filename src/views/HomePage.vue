@@ -11,11 +11,30 @@
           <h1>Welcome to My Blog Site!</h1>
           <p>This is the home page of my blog site. 
             Here you can find different topics and updates about my interests and life experiences.</p>
+          <button @click="toggleMessage">Hidden Message</button>
+          <p v-if="showMessage">{{ message }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showMessage: false,
+      message: 'I love you! mwaa ;*'
+    };
+  },
+  methods: {
+    toggleMessage() {
+      this.showMessage = !this.showMessage;
+    }
+  }
+};
+</script>
+
 
 <style scoped>
 .home-page {

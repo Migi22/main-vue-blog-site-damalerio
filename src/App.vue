@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav>
-      <div class="brand">Damalerio's Blog Site</div>
+      <div class="brand" @click="goToHomePage">Damalerio's Blog Site</div>
       <div class="navigations">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
@@ -16,8 +16,12 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  methods: {
+    goToHomePage() {
+      this.$router.push('/');
+    }
+  }
+};
 </script>
 
 
@@ -42,6 +46,7 @@ nav {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  cursor: pointer; 
 }
 
 nav a {
